@@ -19,4 +19,7 @@ Install mongodb for OSX - http://docs.mongodb.org/manual/tutorial/install-mongod
 
 docs.mongodb.org also has a number of other installation and getting started guides
 
+Once everything is installed, open a browser and begin testing with http://localhost:5000/index.html
+The port can be changed on line 11 in your server.js file.
+
 I am working on writing more detailed documentation for this repo, but for now you can search google and find more information on each of these installs if you feel you need it.
