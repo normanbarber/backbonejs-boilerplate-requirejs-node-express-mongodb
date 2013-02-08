@@ -23,10 +23,12 @@ Once everything is installed, you will need to start the mongodb and the node se
 
 In the first window type:
 > cd path-to-your-folder\mongodb\bin
+
 > mongod
 
 In the second window type:
 > cd path-to-your-folder
+
 > node server
 
 open a browser and begin testing with http://localhost:5000/index.html If you don't like port 5000 this can be changed on line 11 in your server.js file.
