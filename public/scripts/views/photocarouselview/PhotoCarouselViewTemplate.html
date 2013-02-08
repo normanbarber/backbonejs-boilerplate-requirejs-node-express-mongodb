@@ -1,0 +1,11 @@
+<h4>models in your photo collection - <%= photolistcount %></h4>
+<ul>
+    <% _.each(photolistcollection, function(page) { %>
+    <li id="pagethumb" name="<%= page.name %>">
+        <div class="thumb custom empty">
+            <div class="content"><img src="images/image-placeholder-big.svg" /></div>
+            <div class="label"><%= page.name %></div>
+        </div>
+    </li> 
+    <% }); %>
+</ul>

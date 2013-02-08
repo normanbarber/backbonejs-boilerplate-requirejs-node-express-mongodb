@@ -1,0 +1,10 @@
+<h4 align="center">views/listitemview</h4>
+<button class="new-model btn-success">add new list item model</button>
+<ul>
+    <% _.each(listcollection, function(listitem) { %>
+        <li class="active">
+            <div class="title"><%= listitem.name %></div>
+            <div class="date"><%= listitem.date %></div>
+        </li>
+    <% }); %>
+</ul>

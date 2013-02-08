@@ -1,0 +1,36 @@
+<div class="row-fluid background-form">
+    <div class="alert alert-success">
+        <b>Success!</b> Photo saved successfully
+    </div>
+    <form class="form-horizontal span12">
+        <h4>utilities/Paginator/</h4>
+        <div class="paginator"></div>
+        <fieldset>
+            <legend>Enter new name for photo model and click save to add it to its collection and update database</legend>
+            <h4 class="bottom30">views/photoformview/</h4>
+            <div class="row" align="center">
+                    <div class="control-group input-wrapper alignleft">
+                        <label for="name" class="control-label" >Name:</label>
+                        <div class="controls">
+                            <input type="text" id="name" name="name" value="<%= name %>"/>
+                            <span class="help-inline"></span>
+                        </div>
+                    </div>
+                    <div class="control-group input-wrapper alignleft">
+                        <label for="picture" class="control-label">Photo:</label>
+                        <div class="controls">
+                            <input type="text" id="picture" name="picture" value="images/image-placeholder-small.png"/>
+                            <span class="help-inline"></span>
+                        </div>
+                    </div>
+            </div>
+        </fieldset>
+        <div class="form-actions save-wrapper" align="right">
+            <a class="btn save btn-success">Save</a>
+        </div>
+        <h4 class="top30">views/photogridview/</h4>
+    </form>
+</div>
+<div data-role="content">
+    <ul class="thumbnails"></ul>
+</div>

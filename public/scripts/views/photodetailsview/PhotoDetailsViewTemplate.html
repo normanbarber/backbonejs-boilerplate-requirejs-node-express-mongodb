@@ -1,0 +1,39 @@
+<div data-role="header" data-tap-toggle="false" class="ui-bar-a">
+    <div class="ui-grid-b">
+        <div data-role="controlgroup" data-type="horizontal" class="ui-block-a ui-btn">
+            <a id="btnBack" href="#add_delete_models" data-role="button" data-icon="home" data-iconpos="notext" data-iconshadow="false">
+                <button class="btn link-dark uppercase">Back</button>
+            </a>
+        </div>
+        <div class="ui-block-b">
+            <h4>views/photodetailsview</h4>
+        </div>
+        <div class="ui-block-c"></div>
+    </div>
+</div>
+<div class="row-fluid background-form">
+    <form class="form-horizontal span12">
+        <div class="paginator"></div>
+        <fieldset>
+            <legend>Delete this model or enter new name and click save to update the collection and database</legend>
+            <div class="row two-third">
+                    <div class="control-group input-wrapper alignright">
+                        <label for="name" class="control-label" >Name:</label>
+
+                        <div class="controls">
+                            <input type="text" id="name" name="name" value="<%= name %>"/>
+                            <span class="help-inline"></span>
+                        </div>
+                    </div>
+            </div>
+        </fieldset>
+        <div class="form-actions save-wrapper" align="right">
+            <a class="btn save btn-success">Save</a>
+	        <a class="btn deleteListener">Delete</a>
+        </div>
+	    <a class="thumbnail">
+	        <img name="<%= name %>" src="<%= picture == null || picture == '' ? 'images/image-placeholder-small.png' : 'images/' + picture %>" height="150" width="125" alt="">
+	        <h5><%= name %></h5>
+	    </a>
+    </form>
+  </div>  

@@ -1,0 +1,11 @@
+<li class="active">
+	<form class="form-horizontal">
+	    <div class="form-actions form-btn" align="right">
+	        	<a href="#photoDetails/<%= _id %>">Edit</a>
+	    </div>
+	</form>
+    <a class="thumbnail" href="#photoDetails/<%= _id %>">
+        <img name="<%= name %>" src="<%= picture == null || picture == '' ? 'images/image-placeholder-small.png' : 'images/' + picture %>" height="150" width="125" alt="">
+        <h5><%= name %></h5>
+    </a>
+</li>
